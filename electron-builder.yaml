@@ -2,7 +2,7 @@ directories:
   buildResources: buildResources
   output: dist
 appId: edu.mit.scratch.scratch-desktop
-productName: "Scratch 3"
+productName: "Scratch3"
 publish: # empty provider list = don't publish
 mac:
   category: public.app-category.education
@@ -44,3 +44,13 @@ appx:
 nsis:
   oneClick: false # allow user to choose per-user or per-machine
   artifactName: "Scratch ${version} Setup.${ext}"
+linux:
+  target:
+  - AppImage
+  - deb
+  - rpm
+  executableName: scratch-desktop
+  category: Education
+  # Ensure sandbox permissions are set
+  asarUnpack:
+    - chrome-sandbox

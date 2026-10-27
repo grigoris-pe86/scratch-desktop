@@ -2,8 +2,8 @@
   "name": "scratch-desktop",
   "productName": "Scratch",
   "description": "Scratch 3.0 as a self-contained desktop application",
-  "author": "Scratch Foundation",
-  "version": "3.29.1",
+  "author": "Scratch Foundation <info@scratch.org>",
+  "version": "3.29.1-sch-scripts",
   "license": "BSD-3-Clause",
   "scripts": {
     "clean": "rimraf ./dist ./static/assets",
